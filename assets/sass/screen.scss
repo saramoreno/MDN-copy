@@ -1,0 +1,31 @@
+@import "compass";
+@import "compass/reset";
+@import "compass/utilities/sprites";
+@import "icons/*.png";
+@include all-icons-sprites;
+
+// GLOBALS
+
+@import "globals/settings";
+@import "globals/mixins";
+
+// BASE
+
+@import "base/normalize";
+@import "base/grid";
+@import "base/base";
+@import "base/headings";
+@import "base/layout";
+@import "base/forms";
+
+// OBJECTS
+
+@import "objects/buttons";
+@import "objects/header";
+@import "objects/footer";
+@import "objects/icons";
+@import "objects/panels";
+
+//FONTS
+
+@import "fonts/font-awesome";

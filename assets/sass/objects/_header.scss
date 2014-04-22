@@ -1,0 +1,33 @@
+
+/*------------------------------------*\
+    $HEADER
+\*------------------------------------*/
+
+.main-header {
+  padding: 1.25rem 0;
+  background-color: $secondaryBg;
+  overflow: hidden;
+  border-bottom: 1px solid darken($secondaryBg, 5%);
+  line-height: 2rem;
+
+  @include box-shadow (1px 0 #ccc);
+
+  nav {
+    overflow:hidden; 
+    text-align: right;
+  }
+}
+
+.main-list a {
+  padding: 0.625rem;
+  font-weight: bold;
+
+   @include border-radius(10px);
+
+  &:hover {
+    background-color:lighten($secondaryBg, 3%);
+
+  }
+
+
+}

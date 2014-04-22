@@ -1,0 +1,22 @@
+
+/*------------------------------------*\
+    $BUTTONS
+\*------------------------------------*/
+
+.btn {
+  background: $primary;
+  color: $text;
+  border: none;
+  border-bottom: 1px solid darken($primary, 20%);
+  @include border-radius(4px);
+  @include box-shadow(1px 1px 1px #ccc);
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+  margin: 1rem 0;
+    
+    &:hover {
+    color: darken($text, 10%);
+    background-color: darken($primary, 1%);
+    }
+  }

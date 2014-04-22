@@ -1,0 +1,16 @@
+/*------------------------------------*\
+    $PANNELS
+\*------------------------------------*/
+
+.panel {
+  background: #fff;
+  margin-bottom: 10px;
+  border-bottom: 4px solid #e3e4e8;
+  @include border-radius (6px);
+  padding: 20px;
+  overflow:hidden; /*clearfix*/
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  vertical-align: top;
+}

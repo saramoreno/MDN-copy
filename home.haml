@@ -1,0 +1,107 @@
+-# coding: utf-8
+!!! 5
+%html
+  %head
+    %meta{charset: "utf-8"}
+
+    %meta{content: "width=device-width", name: "viewport"}
+
+    %title Redradix
+
+    /[if lt IE 9]
+      %script{src:"assets/javascripts/dependencies/html5shiv.js"}
+
+    %link{href: "assets/stylesheets/screen.css", rel: 'stylesheet'}
+
+  %body
+    %header.main-header 
+      .wrapper
+        .logo.one-quarter.left
+          %h1 
+            %a{href: "home.html"} 
+              MDN
+        %nav.three-quarters.right
+          %ul.main-list 
+            %li.inline-content
+              %a{href:"#"} ZONES
+            %li.inline-content
+              %a{href:"#"} WEB PLATFORM
+            %li.inline-content
+              %a{href:"#"} DEVELOPER PROGRAM
+            %li.inline-content
+              %a{href:"#"} TOOLS
+            %li.inline-content
+              %a{href:"#"} DEMOS
+            %li.inline-content
+              %form{action: "#"} 
+                %input{type: "search-text"}/ 
+                %i.fa.fa-search
+
+    .main-content
+      .wrapper
+        %nav.crumbs
+          %ol
+            %li.crum.inline-content
+              %a{href:"#"}MDN
+            %li.crum.inline-content
+              %a{href:"#"} Web technology for developers
+            %li.crum.inline-content
+              %a{href:"#"} Javascript
+            %li.crum-last.inline-content Values, variables and literals
+        %h1 Values, variables and literals
+        .column-wrapper
+          .main-column
+            %section 
+              %h2 Values
+              %table.normal-table
+                %thead
+                  %tr 
+                    %th Type
+                    %th Examples of typed values/notes
+                %tbody 
+                  %tr 
+                    %td Numbers
+                    %td 42, 3.14159
+                  %tr
+                    %td Booleans
+                    %td true/false
+                  %tr
+                    %td Strings
+                    %td a special keyword denoting a null value; null is also a primitive value. Because JavaScript is case-sensitive, null is not the same as Null, NULL, or any other variant
+                %section 
+                  .code.box
+                    x = "The answer is " + 42 // "The answer is 42"
+                    y = 42 + " is the answer" // "42 is the answer"
+
+                  %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, ratione, omnis, id nobis iusto minus iure quo blanditiis sequi quam dolorum sed minima ab dignissimos consequatur molestiae similique eos praesentium!
+                %section 
+                  .note.warning
+                    %p Note: ECMA-262, Edition 2 consisted of minor editorial changes and bug fixes to the Edition 1 specification. The current release by the TC39 working group of Ecma International is ECMAScript Edition 5.1
+                  .note.success
+                    %p Note: ECMA-262, Edition 2 consisted of minor editorial changes and bug fixes to the Edition 1 specification. The current release by the TC39 working group of Ecma International is ECMAScript Edition 5.1
+                  .note.danger
+                    %p Note: ECMA-262, Edition 2 consisted of minor editorial changes and bug fixes to the Edition 1 specification. The current release by the TC39 working group of Ecma International is ECMAScript Edition 5.1
+
+                  .button.btn.one-quarter 
+                    edit
+                    %i.fa.fa-pencil
+            .aside.right-column
+              %h3 IN THIS ARTICLE
+              %ol
+                %li 
+                  %a{href: "#"} Values
+                %li 
+                  %a{href: "#"} Variables
+                %li 
+                  %a{href: "#"} Constants
+                %li 
+                  %a{href: "#"} Literals
+                %li 
+                  %a{href: "#"} Unicode
+
+
+
+
+
+
+

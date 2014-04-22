@@ -1,0 +1,77 @@
+
+/*------------------------------------*\
+    $LAYOUT
+\*------------------------------------*/
+
+.wrapper{
+	width: 98%;
+	max-width: $l-maxWidth;
+	margin: 0 auto;
+  overflow:hidden;
+  padding: 1rem 0;
+}
+
+.main-content {
+  clear:both;
+}
+
+
+/*------------------------------------*\
+    $GRIDS
+\*------------------------------------*/
+
+/* Grid Container */
+.g {
+	letter-spacing: -0.35em;
+	> *{
+		letter-spacing: normal;
+	}
+}
+
+/* Grid Item */
+.gi {
+	letter-spacing: normal;
+
+	@include media-query(lap-and-up){
+		display: inline-block;
+		vertical-align: top;
+	}
+}
+
+// GRIDS WIDTH MARGINS
+
+.mr {
+  margin-right: 1%;
+}
+
+.ml {
+  margin-left: 1%;
+}
+
+.half-width {
+  width: 49%;
+}
+
+.forty-width {
+  width: 39%;
+}
+
+.forty-width {
+  width: 39%;
+}
+
+.sixty-width {
+  width: 59%;
+}
+
+.sixty-width {
+  width: 59%;
+}
+
+.onethird-width {
+  width: 32.33%;
+}
+
+.eighty-width {
+  width: 79%;
+}
