@@ -1,0 +1,16 @@
+/*------------------------------------------*\
+    Breadcrums
+\*------------------------------------------*/
+
+.crum {
+  margin: 1rem 0;
+
+  i {
+  color: darken($secondaryBg, 10%);
+  font-size: 0.75rem;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+}

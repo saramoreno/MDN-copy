@@ -31,3 +31,18 @@ h3, .gamma {
 // .kilo {
 //   @include font-size($font_size_kilo);
 // }
+
+.big-heading {
+  font-size: 3rem;
+  font-weight: 200;
+}
+
+.normal-heading {
+  font-size: 1.875rem;
+  font-weight: 700;
+}
+
+.small-heading {
+  font-size: 1.5rem;
+  font-weight: 400;
+}

@@ -9,10 +9,12 @@
 
 
 $baseBg: #fff;
-$secondaryBg: #F4F7F8;
+$secondaryBg: #E7EBEE;
 $text: #65666B;
 $textDark: #454547;
 $textLight:#6E4E53;
+
+$colorForm:#FCFCFD;
 
 $primary: #F5F6F7;
 // $primaryDark
@@ -31,8 +33,8 @@ $secondary: #27A2DB;
 //   Fonts
 // -------------------------------------
 
-$font: Arial, Helvetica, sans-serif;
-$fontSecondary: 'AvantGardeStd-Demi', Arial, Helvetica, sans-serif;
+$font-1: "Open Sans",Arial, Helvetica, sans-serif;
+$font-2: 'AvantGardeStd-Demi', Arial, Helvetica, sans-serif;
 $base-lineHeight: normal;
 
 $font-base: 14;

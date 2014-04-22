@@ -33,7 +33,7 @@
             %li.inline-content
               %a{href:"#"} DEMOS
             %li.inline-content
-              %form{action: "#"} 
+              %form.basic-form{action: "#"} 
                 %input{type: "search-text"}/ 
                 %i.fa.fa-search
 
@@ -42,17 +42,23 @@
         %nav.crumbs
           %ol
             %li.crum.inline-content
-              %a{href:"#"}MDN
+              %a{href:"#"}
+                MDN 
+                %i.fa.fa-chevron-right
             %li.crum.inline-content
-              %a{href:"#"} Web technology for developers
+              %a{href:"#"} 
+                Web technology for developers 
+                %i.fa.fa-chevron-right
             %li.crum.inline-content
-              %a{href:"#"} Javascript
+              %a{href:"#"} 
+                Javascript 
+                %i.fa.fa-chevron-right
             %li.crum-last.inline-content Values, variables and literals
-        %h1 Values, variables and literals
+        %h1.big-heading Values, variables and literals
         .column-wrapper
-          .main-column
+          .main-column>
             %section 
-              %h2 Values
+              %h2.normal-heading Values
               %table.normal-table
                 %thead
                   %tr 
@@ -73,6 +79,7 @@
                     x = "The answer is " + 42 // "The answer is 42"
                     y = 42 + " is the answer" // "42 is the answer"
 
+                  %h3.small-heading Data type conversion
                   %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, ratione, omnis, id nobis iusto minus iure quo blanditiis sequi quam dolorum sed minima ab dignissimos consequatur molestiae similique eos praesentium!
                 %section 
                   .note.warning
@@ -85,19 +92,19 @@
                   .button.btn.one-quarter 
                     edit
                     %i.fa.fa-pencil
-            .aside.right-column
-              %h3 IN THIS ARTICLE
-              %ol
-                %li 
-                  %a{href: "#"} Values
-                %li 
-                  %a{href: "#"} Variables
-                %li 
-                  %a{href: "#"} Constants
-                %li 
-                  %a{href: "#"} Literals
-                %li 
-                  %a{href: "#"} Unicode
+          %aside.right-column>
+            %h3 IN THIS ARTICLE
+            %ol
+              %li 
+                %a{href: "#"} Values
+              %li 
+                %a{href: "#"} Variables
+              %li 
+                %a{href: "#"} Constants
+              %li 
+                %a{href: "#"} Literals
+              %li 
+                %a{href: "#"} Unicode
 
 
 

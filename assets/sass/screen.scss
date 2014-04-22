@@ -1,8 +1,6 @@
 @import "compass";
 @import "compass/reset";
 @import "compass/utilities/sprites";
-@import "icons/*.png";
-@include all-icons-sprites;
 
 // GLOBALS
 
@@ -25,7 +23,10 @@
 @import "objects/footer";
 @import "objects/icons";
 @import "objects/panels";
+@import "objects/breadcrum";
+@import "objects/aside";
 
 //FONTS
 
 @import "fonts/font-awesome";
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,700");
