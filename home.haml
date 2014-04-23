@@ -22,21 +22,20 @@
               MDN
         %nav.three-quarters.right
           %ul.main-list 
-            %li.inline-content
+            %li.inline-content>
               %a{href:"#"} ZONES
-            %li.inline-content
+            %li.inline-content>
               %a{href:"#"} WEB PLATFORM
-            %li.inline-content
+            %li.inline-content>
               %a{href:"#"} DEVELOPER PROGRAM
-            %li.inline-content
+            %li.inline-content>
               %a{href:"#"} TOOLS
-            %li.inline-content
+            %li.inline-content>
               %a{href:"#"} DEMOS
-            %li.inline-content
+            %li.inline-content>
               %form.basic-form{action: "#"} 
                 %input{type: "search-text"}/ 
                 %i.fa.fa-search
-
     .main-content
       .wrapper
         %nav.crumbs
@@ -73,14 +72,81 @@
                     %td true/false
                   %tr
                     %td Strings
-                    %td a special keyword denoting a null value; null is also a primitive value. Because JavaScript is case-sensitive, null is not the same as Null, NULL, or any other variant
+                    %td 
+                      a special keyword denoting a null value; null is also a primitive value. Because JavaScript is case-sensitive, null is not the same as 
+                      %span.t-code Null, NULL, 
+                      or any other variant
+                  %tr
+                    %td.t-code undefined
+                    %td 
+                      a top-level property whose value is undefined;
+                      %span.t-code undefined
+                      is also a primitive value
                 %section 
-                  .code.box
-                    x = "The answer is " + 42 // "The answer is 42"
-                    y = 42 + " is the answer" // "42 is the answer"
+                  .code-box
+                    %code.languaje-js
+                      .line-number{data:{start:"1"}}
+                      x
+                      %span.token.operator =
+                      %span.token.string "The answer is"
+                      %span.token.operator +
+                      %span.token.number 42
+                      %span.token.comment //The answer is 42
+                      %br/ 
+                      .line-number{data:{start:"2"}}
+                      %span y
+                      %span.token.operator =
+                      %span.token.number 42
+                      %span.token.operator +
+                      %span.token.string "is the answer"
+                      %span.token.comment // 42 is the answer
 
-                  %h3.small-heading Data type conversion
-                  %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, ratione, omnis, id nobis iusto minus iure quo blanditiis sequi quam dolorum sed minima ab dignissimos consequatur molestiae similique eos praesentium!
+                %section
+                  %article.normal-text 
+                    %h3.small-heading Data type conversion
+                    %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, ratione, omnis, id nobis iusto minus iure quo blanditiis sequi quam dolorum sed minima ab dignissimos consequatur molestiae similique eos praesentium!
+                  %article.normal-text
+                    %h3.small-heading Data type conversion
+                    %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, ratione, omnis, id nobis iusto minus iure quo blanditiis sequi quam dolorum sed minima ab dignissimos consequatur molestiae similique eos praesentium!
+                  %article.normal-text
+                    %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, ratione, omnis, id nobis iusto minus iure quo blanditiis sequi quam dolorum sed minima ab dignissimos consequatur molestiae similique eos praesentium
+                  %section 
+                    .code-box
+                      %code.languaje-js
+                        .line-number{data:{start:"1"}}
+                        %span.token.keyword var
+                        input
+                        %span.token.punctuation ;
+                        %br/ 
+                        .line-number{data:{start:"2"}}
+                        %span.token.keyword if
+                        %span.token.punctuation (
+                        input
+                        %span.token.operator ===
+                        undefined
+                        %span.token.punctuation )
+                        %span.token.punctuation {
+                        %br/ 
+                        .line-number{data:{start:"3"}}
+                        %span.token.function "doThis"
+                        %span.token.punctuation (
+                        %span.token.punctuation )
+                        %span.token.punctuation ;
+                        %br/ 
+                        .line-number{data:{start:"4"}}
+                        %span.token.punctuation }
+                        %span.token.keyword else
+                        %span.token.punctuation {
+                        %br/ 
+                        .line-number{data:{start:"5"}}
+                        %span.token.function "doThat"
+                        %span.token.punctuation (
+                        %span.token.punctuation )
+                        %span.token.punctuation ;
+                        %br/ 
+                        .line-number{data:{start:"6"}}
+                        %span.token.punctuation }
+
                 %section 
                   .note.warning
                     %p Note: ECMA-262, Edition 2 consisted of minor editorial changes and bug fixes to the Edition 1 specification. The current release by the TC39 working group of Ecma International is ECMAScript Edition 5.1
@@ -89,16 +155,33 @@
                   .note.danger
                     %p Note: ECMA-262, Edition 2 consisted of minor editorial changes and bug fixes to the Edition 1 specification. The current release by the TC39 working group of Ecma International is ECMAScript Edition 5.1
 
-                  .button.btn.one-quarter 
+                  .button.btn.btn-xs
                     edit
                     %i.fa.fa-pencil
+                  .button.btn.btn-m
+                    edit
+                    %i.fa.fa-pencil
+                  .button.btn.btn-xl
+                    edit
+                    %i.fa.fa-pencil
+
           %aside.right-column>
-            %h3 IN THIS ARTICLE
+            %h4 IN THIS ARTICLE
             %ol
               %li 
                 %a{href: "#"} Values
+                %ol.sub-list
+                  %li 
+                    %a.small{href:"#"} Data type conversion
+                  %li 
+                    %a.small{href:"#"} Converting strings to numbers
               %li 
                 %a{href: "#"} Variables
+                %ol.sub-list
+                  %li 
+                    %a.small{href:"#"} Declaring variables
+                  %li 
+                    %a.small{href:"#"} Evaluating variables
               %li 
                 %a{href: "#"} Constants
               %li 

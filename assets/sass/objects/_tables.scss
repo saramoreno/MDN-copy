@@ -1,0 +1,18 @@
+/*------------------------------------------*\
+    Tables
+\*------------------------------------------*/
+
+.normal-table {
+  width: 100%;
+
+  th {
+  background-color: $secondaryBg;
+  color: darken($text, 20%);
+  text-align: center;
+  }
+
+  td, th {
+    padding: 0.625em;
+    border: 1px solid darken($secondaryBg, 5%);
+  }
+}

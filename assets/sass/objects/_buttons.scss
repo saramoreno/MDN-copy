@@ -14,9 +14,22 @@
   cursor: pointer;
   text-align: center;
   margin: 1rem 0;
+  text-transform: uppercase;
     
     &:hover {
     color: darken($text, 10%);
     background-color: darken($primary, 1%);
     }
+  }
+
+  .btn-xs {
+    width: 10%;
+  }
+
+  .btn-m {
+    width: 30%;
+  }
+
+  .btn-xl {
+    width: 40%;
   }

@@ -22,7 +22,7 @@ body{
   -webkit-font-smoothing:antialiased;
 }
 
-section {
+section, article {
   margin: 20px 0;
 }
 
@@ -86,4 +86,9 @@ p a{
 
 .t-bold {
   font-weight: 700;
+}
+
+.t-code {
+  font-family: "Cousine";
+  opacity: 0.6;
 }

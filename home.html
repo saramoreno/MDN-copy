@@ -20,29 +20,22 @@
           </h1>
         </div>
         <nav class='three-quarters right'>
-          <ul class='main-list'>
-            <li class='inline-content'>
+          <ul class='main-list'><li class='inline-content'>
               <a href='#'>ZONES</a>
-            </li>
-            <li class='inline-content'>
+            </li><li class='inline-content'>
               <a href='#'>WEB PLATFORM</a>
-            </li>
-            <li class='inline-content'>
+            </li><li class='inline-content'>
               <a href='#'>DEVELOPER PROGRAM</a>
-            </li>
-            <li class='inline-content'>
+            </li><li class='inline-content'>
               <a href='#'>TOOLS</a>
-            </li>
-            <li class='inline-content'>
+            </li><li class='inline-content'>
               <a href='#'>DEMOS</a>
-            </li>
-            <li class='inline-content'>
+            </li><li class='inline-content'>
               <form action='#' class='basic-form'>
                 <input type='search-text'>
                 <i class='fa fa-search'></i>
               </form>
-            </li>
-          </ul>
+            </li></ul>
         </nav>
       </div>
     </header>
@@ -93,16 +86,89 @@
                   </tr>
                   <tr>
                     <td>Strings</td>
-                    <td>a special keyword denoting a null value; null is also a primitive value. Because JavaScript is case-sensitive, null is not the same as Null, NULL, or any other variant</td>
+                    <td>
+                      a special keyword denoting a null value; null is also a primitive value. Because JavaScript is case-sensitive, null is not the same as
+                      <span class='t-code'>Null, NULL,</span>
+                      or any other variant
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class='t-code'>undefined</td>
+                    <td>
+                      a top-level property whose value is undefined;
+                      <span class='t-code'>undefined</span>
+                      is also a primitive value
+                    </td>
                   </tr>
                 </tbody>
                 <section>
-                  <div class='code box'>
-                    x = "The answer is " + 42 // "The answer is 42"
-                    y = 42 + " is the answer" // "42 is the answer"
+                  <div class='code-box'>
+                    <code class='languaje-js'><div class='line-number' data-start='1'></div>
+                    x
+                    <span class='token operator'>=</span>
+                    <span class='token string'>"The answer is"</span>
+                    <span class='token operator'>+</span>
+                    <span class='token number'>42</span>
+                    <span class='token comment'>//The answer is 42</span>
+                    <br>
+                    <div class='line-number' data-start='2'></div>
+                    <span>y</span>
+                    <span class='token operator'>=</span>
+                    <span class='token number'>42</span>
+                    <span class='token operator'>+</span>
+                    <span class='token string'>"is the answer"</span>
+                    <span class='token comment'>// 42 is the answer</span></code>
                   </div>
-                  <h3 class='small-heading'>Data type conversion</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, ratione, omnis, id nobis iusto minus iure quo blanditiis sequi quam dolorum sed minima ab dignissimos consequatur molestiae similique eos praesentium!</p>
+                </section>
+                <section>
+                  <article class='normal-text'>
+                    <h3 class='small-heading'>Data type conversion</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, ratione, omnis, id nobis iusto minus iure quo blanditiis sequi quam dolorum sed minima ab dignissimos consequatur molestiae similique eos praesentium!</p>
+                  </article>
+                  <article class='normal-text'>
+                    <h3 class='small-heading'>Data type conversion</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, ratione, omnis, id nobis iusto minus iure quo blanditiis sequi quam dolorum sed minima ab dignissimos consequatur molestiae similique eos praesentium!</p>
+                  </article>
+                  <article class='normal-text'>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, ratione, omnis, id nobis iusto minus iure quo blanditiis sequi quam dolorum sed minima ab dignissimos consequatur molestiae similique eos praesentium</p>
+                  </article>
+                  <section>
+                    <div class='code-box'>
+                      <code class='languaje-js'><div class='line-number' data-start='1'></div>
+                      <span class='token keyword'>var</span>
+                      input
+                      <span class='token punctuation'>;</span>
+                      <br>
+                      <div class='line-number' data-start='2'></div>
+                      <span class='token keyword'>if</span>
+                      <span class='token punctuation'>(</span>
+                      input
+                      <span class='token operator'>===</span>
+                      undefined
+                      <span class='token punctuation'>)</span>
+                      <span class='token punctuation'>{</span>
+                      <br>
+                      <div class='line-number' data-start='3'></div>
+                      <span class='token function'>"doThis"</span>
+                      <span class='token punctuation'>(</span>
+                      <span class='token punctuation'>)</span>
+                      <span class='token punctuation'>;</span>
+                      <br>
+                      <div class='line-number' data-start='4'></div>
+                      <span class='token punctuation'>}</span>
+                      <span class='token keyword'>else</span>
+                      <span class='token punctuation'>{</span>
+                      <br>
+                      <div class='line-number' data-start='5'></div>
+                      <span class='token function'>"doThat"</span>
+                      <span class='token punctuation'>(</span>
+                      <span class='token punctuation'>)</span>
+                      <span class='token punctuation'>;</span>
+                      <br>
+                      <div class='line-number' data-start='6'></div>
+                      <span class='token punctuation'>}</span></code>
+                    </div>
+                  </section>
                 </section>
                 <section>
                   <div class='note warning'>
@@ -114,7 +180,15 @@
                   <div class='note danger'>
                     <p>Note: ECMA-262, Edition 2 consisted of minor editorial changes and bug fixes to the Edition 1 specification. The current release by the TC39 working group of Ecma International is ECMAScript Edition 5.1</p>
                   </div>
-                  <div class='button btn one-quarter'>
+                  <div class='button btn btn-xs'>
+                    edit
+                    <i class='fa fa-pencil'></i>
+                  </div>
+                  <div class='button btn btn-m'>
+                    edit
+                    <i class='fa fa-pencil'></i>
+                  </div>
+                  <div class='button btn btn-xl'>
                     edit
                     <i class='fa fa-pencil'></i>
                   </div>
@@ -122,13 +196,29 @@
               </table>
             </section>
           </div><aside class='right-column'>
-            <h3>IN THIS ARTICLE</h3>
+            <h4>IN THIS ARTICLE</h4>
             <ol>
               <li>
                 <a href='#'>Values</a>
+                <ol class='sub-list'>
+                  <li>
+                    <a class='small' href='#'>Data type conversion</a>
+                  </li>
+                  <li>
+                    <a class='small' href='#'>Converting strings to numbers</a>
+                  </li>
+                </ol>
               </li>
               <li>
                 <a href='#'>Variables</a>
+                <ol class='sub-list'>
+                  <li>
+                    <a class='small' href='#'>Declaring variables</a>
+                  </li>
+                  <li>
+                    <a class='small' href='#'>Evaluating variables</a>
+                  </li>
+                </ol>
               </li>
               <li>
                 <a href='#'>Constants</a>

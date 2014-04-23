@@ -1,4 +1,5 @@
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,700");
+@import url("http://fonts.googleapis.com/css?family=Cousine:400,700");
 /* line 5, ../../../../../../Downloads/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -233,7 +234,7 @@ body {
 }
 
 /* line 25, ../sass/base/_base.scss */
-section {
+section, article {
   margin: 20px 0;
 }
 
@@ -311,6 +312,12 @@ p a {
   font-weight: 700;
 }
 
+/* line 91, ../sass/base/_base.scss */
+.t-code {
+  font-family: "Cousine";
+  opacity: 0.6;
+}
+
 /*------------------------------------*\
     $HEADINGS
 \*------------------------------------*/
@@ -355,91 +362,89 @@ h3, .gamma {
 \*------------------------------------*/
 /* line 6, ../sass/base/_layout.scss */
 .wrapper {
-  width: 98%;
-  max-width: 975px;
-  margin: 0 auto;
   overflow: hidden;
-  padding: 1rem 0;
+  padding: 1.25rem;
 }
 
-/* line 14, ../sass/base/_layout.scss */
+/* line 11, ../sass/base/_layout.scss */
 .main-content {
   clear: both;
 }
 
-/* line 18, ../sass/base/_layout.scss */
+/* line 15, ../sass/base/_layout.scss */
 .main-column {
-  width: 60%;
+  width: 80%;
   display: inline-block;
+  padding: 1.25rem;
 }
 
 /*------------------------------------*\
     $GRIDS
 \*------------------------------------*/
 /* Grid Container */
-/* line 29, ../sass/base/_layout.scss */
+/* line 27, ../sass/base/_layout.scss */
 .g {
   letter-spacing: -0.35em;
 }
-/* line 31, ../sass/base/_layout.scss */
+/* line 29, ../sass/base/_layout.scss */
 .g > * {
   letter-spacing: normal;
 }
 
 /* Grid Item */
-/* line 37, ../sass/base/_layout.scss */
+/* line 35, ../sass/base/_layout.scss */
 .gi {
   letter-spacing: normal;
 }
 @media only screen and (min-width: 50em) {
-  /* line 37, ../sass/base/_layout.scss */
+  /* line 35, ../sass/base/_layout.scss */
   .gi {
     display: inline-block;
     vertical-align: top;
   }
 }
 
-/* line 48, ../sass/base/_layout.scss */
+/* line 46, ../sass/base/_layout.scss */
 .mr {
   margin-right: 1%;
 }
 
-/* line 52, ../sass/base/_layout.scss */
+/* line 50, ../sass/base/_layout.scss */
 .ml {
   margin-left: 1%;
 }
 
-/* line 56, ../sass/base/_layout.scss */
+/* line 54, ../sass/base/_layout.scss */
 .half-width {
   width: 49%;
 }
 
-/* line 60, ../sass/base/_layout.scss */
+/* line 58, ../sass/base/_layout.scss */
 .forty-width {
   width: 39%;
 }
 
-/* line 64, ../sass/base/_layout.scss */
+/* line 62, ../sass/base/_layout.scss */
 .forty-width {
   width: 39%;
 }
 
-/* line 68, ../sass/base/_layout.scss */
+/* line 66, ../sass/base/_layout.scss */
 .sixty-width {
   width: 59%;
 }
 
-/* line 72, ../sass/base/_layout.scss */
+/* line 70, ../sass/base/_layout.scss */
 .sixty-width {
   width: 59%;
 }
 
-/* line 76, ../sass/base/_layout.scss */
+/* line 74, ../sass/base/_layout.scss */
 .onethird-width {
   width: 32.33%;
 }
 
-/* line 80, ../sass/base/_layout.scss */
+/* line 78, ../sass/base/_layout.scss */
 .eighty-width {
   width: 79%;
 }
@@ -533,11 +538,27 @@ input[type="radio"] {
   cursor: pointer;
   text-align: center;
   margin: 1rem 0;
+  text-transform: uppercase;
 }
-/* line 18, ../sass/objects/_buttons.scss */
+/* line 19, ../sass/objects/_buttons.scss */
 .btn:hover {
   color: #4c4d51;
   background-color: #f2f3f5;
+}
+
+/* line 25, ../sass/objects/_buttons.scss */
+.btn-xs {
+  width: 10%;
+}
+
+/* line 29, ../sass/objects/_buttons.scss */
+.btn-m {
+  width: 30%;
+}
+
+/* line 33, ../sass/objects/_buttons.scss */
+.btn-xl {
+  width: 40%;
 }
 
 /*------------------------------------*\
@@ -567,7 +588,7 @@ input[type="radio"] {
 
 /* line 25, ../sass/objects/_header.scss */
 .main-list a {
-  padding: 0.625rem;
+  padding: 0.7rem;
   font-weight: bold;
   color: inherit;
   -webkit-border-radius: 10px;
@@ -629,11 +650,113 @@ input[type="radio"] {
 \*------------------------------------------*/
 /* line 5, ../sass/objects/_aside.scss */
 .right-column {
-  width: 40%;
+  width: 20%;
+  max-height: 528px;
   display: inline-block;
   background-color: #e7ebee;
   vertical-align: top;
-  position: fixed;
+  padding: 1.25rem;
+}
+/* line 18, ../sass/objects/_aside.scss */
+.right-column li {
+  padding: 0.7rem;
+}
+/* line 21, ../sass/objects/_aside.scss */
+.right-column li a:hover {
+  text-decoration: underline;
+}
+
+/*------------------------------------------*\
+    Tables
+\*------------------------------------------*/
+/* line 5, ../sass/objects/_tables.scss */
+.normal-table {
+  width: 100%;
+}
+/* line 8, ../sass/objects/_tables.scss */
+.normal-table th {
+  background-color: #e7ebee;
+  color: #333437;
+  text-align: center;
+}
+/* line 14, ../sass/objects/_tables.scss */
+.normal-table td, .normal-table th {
+  padding: 0.625em;
+  border: 1px solid #d8dfe3;
+}
+
+/*------------------------------------------*\
+    Code box
+\*------------------------------------------*/
+/* line 5, ../sass/objects/_code-box.scss */
+.code-box {
+  background: #e7ebee url("../images/crossword.png") repeat;
+  font-family: "Cousine";
+  border-left: 5px solid #27a2db;
+  padding: 1rem 0 1rem 2rem;
+}
+
+/* line 13, ../sass/objects/_code-box.scss */
+code {
+  padding: 1.875rem 0;
+  line-height: 1.5em;
+}
+
+/* line 18, ../sass/objects/_code-box.scss */
+.token.operator {
+  color: #a67f59;
+}
+
+/* line 22, ../sass/objects/_code-box.scss */
+.token.number {
+  color: #905;
+}
+
+/* line 26, ../sass/objects/_code-box.scss */
+.token.string {
+  color: #690;
+}
+
+/* line 30, ../sass/objects/_code-box.scss */
+.token.comment {
+  color: slategray;
+}
+
+/* line 34, ../sass/objects/_code-box.scss */
+.token.keyword {
+  color: #07a;
+}
+
+/* line 38, ../sass/objects/_code-box.scss */
+.token.punctuation {
+  color: #999;
+}
+
+/* line 42, ../sass/objects/_code-box.scss */
+.line-number {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-top: 1rem;
+  background: transparent;
+  pointer-events: none;
+  line-height: inherit;
+  white-space: pre;
+}
+/* line 52, ../sass/objects/_code-box.scss */
+.line-number:before {
+  content: attr(data-start);
+  position: absolute;
+  top: -1.1em;
+  left: 5em;
+  min-width: 1em;
+  padding: 0 .5em;
+  color: #999;
+  font: bold 65%/1.5 sans-serif;
+  text-align: center;
+  border-radius: -999px;
+  text-shadow: none;
+  border: 0;
 }
 
 /*------------------------------------------*\

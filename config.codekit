@@ -488,6 +488,50 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/assets\/images\/crossword.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 43694,
+		"inputAbbreviatedPath": "\/assets\/images\/crossword.png",
+		"outputAbbreviatedPath": "\/assets\/images\/crossword.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/sprinkles.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 160,
+		"inputAbbreviatedPath": "\/assets\/images\/sprinkles.png",
+		"outputAbbreviatedPath": "\/assets\/images\/sprinkles.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/squared_metal.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 16789,
+		"inputAbbreviatedPath": "\/assets\/images\/squared_metal.png",
+		"outputAbbreviatedPath": "\/assets\/images\/squared_metal.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/tree_bark.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 42360,
+		"inputAbbreviatedPath": "\/assets\/images\/tree_bark.png",
+		"outputAbbreviatedPath": "\/assets\/images\/tree_bark.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/javascripts\/dependencies\/custom_form.min.js": {
 		"fileType": 64,
 		"ignore": 0,
@@ -740,6 +784,22 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/assets\/sass\/objects\/_code-box.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 5,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/sass\/objects\/_code-box.scss",
+		"outputAbbreviatedPath": "\/assets\/stylesheets\/_code-box.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
 	"\/assets\/sass\/objects\/_footer.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -788,6 +848,22 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/assets\/sass\/objects\/_notes.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 5,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/sass\/objects\/_notes.scss",
+		"outputAbbreviatedPath": "\/assets\/stylesheets\/_notes.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
 	"\/assets\/sass\/objects\/_panels.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -797,6 +873,22 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/sass\/objects\/_panels.scss",
 		"outputAbbreviatedPath": "\/stylesheets\/_panels.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/assets\/sass\/objects\/_tables.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 5,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/sass\/objects\/_tables.scss",
+		"outputAbbreviatedPath": "\/assets\/stylesheets\/_tables.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
