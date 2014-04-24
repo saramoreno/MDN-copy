@@ -235,7 +235,7 @@ body {
 
 /* line 25, ../sass/base/_base.scss */
 section, article {
-  margin: 20px 0;
+  margin: 2.5rem 0;
 }
 
 /* Block Content */
@@ -355,6 +355,7 @@ h3, .gamma {
 .small-heading {
   font-size: 1.5rem;
   font-weight: 400;
+  margin-bottom: 1rem;
 }
 
 /*------------------------------------*\
@@ -757,6 +758,36 @@ code {
   border-radius: -999px;
   text-shadow: none;
   border: 0;
+}
+
+/*------------------------------------------*\
+    Notes
+\*------------------------------------------*/
+/* line 5, ../sass/objects/_notes.scss */
+.note {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+/* line 11, ../sass/objects/_notes.scss */
+.note.success {
+  background-color: #81cb90;
+  border: 3px solid #43a257;
+  color: #fff;
+}
+
+/* line 17, ../sass/objects/_notes.scss */
+.note.warning {
+  background-color: #f8f8e6;
+  border: 3px solid #ededbe;
+}
+
+/* line 22, ../sass/objects/_notes.scss */
+.note.danger {
+  background-color: #db8d8a;
+  border: 3px solid #c3413c;
+  color: #fff;
 }
 
 /*------------------------------------------*\

@@ -1,0 +1,26 @@
+/*------------------------------------------*\
+    Notes
+\*------------------------------------------*/
+
+.note {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.note.success {
+    background-color: lighten($colorSuccess, 15%);
+    border: 3px solid darken($colorSuccess, 5%);
+    color: #fff;
+}
+
+.note.warning {
+    background-color:$colorWarning;
+    border: 3px solid darken($colorWarning, 10%);
+}
+
+.note.danger {
+  background-color: lighten($colorDanger, 15%);
+  border: 3px solid darken($colorDanger, 5%);
+  color: #fff;
+}
