@@ -3,3 +3,9 @@
     $FOOTER
 \*------------------------------------*/
 
+footer {
+  .main-column {
+    border-top: 1px solid darken($secondaryBg, 5%);
+    padding-top: 1rem;
+  }
+}

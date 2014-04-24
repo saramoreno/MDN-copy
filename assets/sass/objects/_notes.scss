@@ -24,3 +24,9 @@
   border: 3px solid darken($colorDanger, 5%);
   color: #fff;
 }
+
+.note.info {
+  background-color: lighten($colorInfo, 10%);
+  border: 3px solid darken($colorInfo, 5%);
+  color: #fff;
+}
