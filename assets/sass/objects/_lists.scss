@@ -1,0 +1,49 @@
+/*------------------------------------------*\
+    lists
+\*------------------------------------------*/
+
+.un-list {
+  li {
+    list-style-type: square;
+    margin-left: 20px;
+    padding: .7rem 0;
+  }
+}
+
+.or-list {
+  li {
+    padding: .7rem 0;
+  }
+
+  li:nth-child(1):before {
+    content:"1";
+    font-size: .9rem;
+    color: $secondary;
+    padding-left: 0.1875rem;
+    margin-right: 0.7rem;
+  }
+  li:nth-child(2):before {
+    content:"2";
+    @extend li:nth-child(1):before
+  }  
+  li:nth-child(3):before {
+    content:"3";
+    @extend li:nth-child(1):before
+  }  
+  li:nth-child(4):before {
+    content:"4";
+    @extend li:nth-child(1):before
+  }  
+  li:nth-child(5):before {
+    content:"5";
+    @extend li:nth-child(1):before
+  }  
+  li:before {
+    display:inline-block;
+    border: 1px solid $secondary;
+    @include border-radius(50%);
+    width: 1.25rem;
+    height: 1.25rem;
+    line-height: 1.25rem;
+  }
+}

@@ -611,6 +611,22 @@ footer .main-column {
   border-top: 1px solid #e4ecee;
   padding-top: 1rem;
 }
+/* line 12, ../sass/objects/_footer.scss */
+footer .logo {
+  padding-right: 0.7rem;
+}
+/* line 16, ../sass/objects/_footer.scss */
+footer .complementary-info {
+  margin-bottom: 1rem;
+}
+/* line 19, ../sass/objects/_footer.scss */
+footer .complementary-info li {
+  padding: .5rem 0;
+}
+/* line 22, ../sass/objects/_footer.scss */
+footer .complementary-info a:hover {
+  text-decoration: underline;
+}
 
 /*------------------------------------*\
     $ICONS
@@ -807,6 +823,81 @@ code {
   background-color: rgba(0, 110, 210, 0.65);
   border: 3px solid rgba(0, 70, 134, 0.65);
   color: #fff;
+}
+
+/*------------------------------------------*\
+    Tags
+\*------------------------------------------*/
+/* line 6, ../sass/objects/_tags.scss */
+.tags .a-tag {
+  display: inline-block;
+  border: 1px solid #aadaf1;
+  padding: .215rem;
+  font-size: .75rem;
+  background: #f4f7f8;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+}
+/* line 15, ../sass/objects/_tags.scss */
+.tags .a-tag:hover {
+  text-decoration: underline;
+}
+/* line 18, ../sass/objects/_tags.scss */
+.tags .a-tag i {
+  font-weight: 700;
+}
+
+/*------------------------------------------*\
+    lists
+\*------------------------------------------*/
+/* line 6, ../sass/objects/_lists.scss */
+.un-list li {
+  list-style-type: square;
+  margin-left: 20px;
+  padding: .7rem 0;
+}
+
+/* line 14, ../sass/objects/_lists.scss */
+.or-list li {
+  padding: .7rem 0;
+}
+/* line 18, ../sass/objects/_lists.scss */
+.or-list li:nth-child(1):before, .or-list li:nth-child(2):before, .or-list li:nth-child(3):before, .or-list li:nth-child(4):before, .or-list li:nth-child(5):before {
+  content: "1";
+  font-size: .9rem;
+  color: #27a2db;
+  padding-left: 0.1875rem;
+  margin-right: 0.7rem;
+}
+/* line 25, ../sass/objects/_lists.scss */
+.or-list li:nth-child(2):before {
+  content: "2";
+}
+/* line 29, ../sass/objects/_lists.scss */
+.or-list li:nth-child(3):before {
+  content: "3";
+}
+/* line 33, ../sass/objects/_lists.scss */
+.or-list li:nth-child(4):before {
+  content: "4";
+}
+/* line 37, ../sass/objects/_lists.scss */
+.or-list li:nth-child(5):before {
+  content: "5";
+}
+/* line 41, ../sass/objects/_lists.scss */
+.or-list li:before {
+  display: inline-block;
+  border: 1px solid #27a2db;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+  width: 1.25rem;
+  height: 1.25rem;
+  line-height: 1.25rem;
 }
 
 /*------------------------------------------*\

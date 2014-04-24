@@ -167,6 +167,20 @@
                   .button.btn.btn-xl
                     edit
                     %i.fa.fa-pencil
+                %section 
+                  %ul.un-list
+                    %li List item 1
+                    %li List item 2
+                    %li List item 3
+                    %li List item 4
+                    %li List item 5
+                %section 
+                  %ol.or-list
+                    %li List item 1
+                    %li List item 2
+                    %li List item 3
+                    %li List item 4
+                    %li List item 5
 
           %aside.right-column>
             %h4 IN THIS ARTICLE
@@ -194,11 +208,32 @@
       %footer 
         .wrapper
           .main-column
-            .logo.one-quarter.inline-content>
+            %ul.complementary-info
+              %li.tags
+                %i.fa.fa-tags.inline-content
+                  %h6.inline-content Tags: 
+                %a.a-tag{href:"#"} Guide
+                %a.a-tag{href:"#"} Beginner
+                %a.a-tag{href:"#"} Javascript
+              %li.contributors
+                %i.fa.fa-group.inline-content
+                  %h6.inline-content Contributors to this page: 
+                %a{href:"#"} Werelax, 
+                %a{href:"#"} Fuzzyalej, 
+                %a{href:"#"} Sara
+              %li.date 
+                %i.fa.fa-clock-o.inline-content
+                  %h6.inline-content Last update by: 
+                  %a{href:"#"} Werelax
+                %time{datetime:"2014-04-24 19:00"} April 24
+
+            .logo.inline-content>
               %h1 
                 %a{href: "home.html"} 
                   MDN
             %p.inline-content.three-quarters> &copy2014. Redradix
+
+
 
 
 
