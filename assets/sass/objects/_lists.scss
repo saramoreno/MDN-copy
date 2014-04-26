@@ -12,14 +12,14 @@
 
 .or-list {
   li {
-    padding: .7rem 0;
+    padding: .8rem 0;
   }
 
   li:nth-child(1):before {
     content:"1";
-    font-size: .9rem;
+    font-size: .7rem;
     color: $secondary;
-    padding-left: 0.1875rem;
+    padding: 0 0.25rem 0.1rem 0.3rem;
     margin-right: 0.7rem;
   }
   li:nth-child(2):before {
