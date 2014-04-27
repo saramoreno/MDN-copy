@@ -578,17 +578,22 @@ input[type="radio"] {
   box-shadow: 1px 0 #cccccc;
 }
 /* line 15, ../sass/objects/_header.scss */
+.main-header .logo {
+  width: 10%;
+}
+/* line 19, ../sass/objects/_header.scss */
 .main-header nav {
   overflow: hidden;
   text-align: right;
+  width: 90%;
 }
 
-/* line 21, ../sass/objects/_header.scss */
+/* line 26, ../sass/objects/_header.scss */
 .logo a {
   color: inherit;
 }
 
-/* line 25, ../sass/objects/_header.scss */
+/* line 30, ../sass/objects/_header.scss */
 .main-list a {
   padding: 0.7rem;
   font-weight: bold;
@@ -598,11 +603,28 @@ input[type="radio"] {
   background-clip: padding-box;
   /* stops bg color from leaking outside the border: */
 }
-/* line 32, ../sass/objects/_header.scss */
+/* line 37, ../sass/objects/_header.scss */
 .main-list a:hover {
   background-color: #fdfefe;
 }
 
+@media only screen and (max-width: 49.92857em) {
+  /* line 45, ../sass/objects/_header.scss */
+  .logo {
+    float: none;
+    margin: 0 auto 1.25rem auto;
+  }
+
+  /* line 50, ../sass/objects/_header.scss */
+  .main-list {
+    display: block;
+    width: auto;
+  }
+  /* line 54, ../sass/objects/_header.scss */
+  .main-list li {
+    font-size: .8rem;
+  }
+}
 /*------------------------------------*\
     $FOOTER
 \*------------------------------------*/

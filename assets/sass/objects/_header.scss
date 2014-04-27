@@ -12,9 +12,14 @@
 
   @include box-shadow (1px 0 #ccc);
 
+  .logo {
+    width: 10%;
+  }
+
   nav {
     overflow:hidden; 
     text-align: right;
+    width: 90%;
   }
 }
 
@@ -34,5 +39,20 @@
 
   }
 
+}
 
+@include media-query(palm) {
+  .logo {
+    float: none;
+    margin: 0 auto 1.25rem auto;
+  }
+
+  .main-list {
+    display: block;
+    width: auto;
+
+    li {
+      font-size: .8rem;
+    }
+  }
 }
