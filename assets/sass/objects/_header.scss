@@ -5,7 +5,7 @@
 
 .main-header {
   padding: 1.25rem 0;
-  background-color: $secondaryBg;
+  background: $secondaryBg url("../images/dust.png") repeat;
   overflow: hidden;
   border-bottom: 1px solid darken($secondaryBg, 5%);
   line-height: 2rem;
@@ -50,7 +50,6 @@
 
   .logo {
     float: none;
-    margin: 0 auto;
   }
 
   .main-header {

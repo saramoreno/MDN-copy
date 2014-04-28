@@ -42,9 +42,20 @@
 
     i {
       position: absolute;
-      top: 1.25rem;
+      top: 1.5rem;
       right: 1.25rem;
       color: $text;
+    }
+  }
+
+  .drop-content {
+    display: none;
+    width: 100%;
+    background: $secondaryBg;
+    top: -1.0625rem;
+
+    .sub-list {
+      padding: 1rem;
     }
   }
 }
