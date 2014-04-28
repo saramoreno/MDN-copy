@@ -965,49 +965,46 @@ code {
 \*------------------------------------------*/
 /* line 6, ../sass/objects/_lists.scss */
 .un-list li {
-  list-style-type: square;
-  margin-left: 20px;
   padding: .7rem 0;
 }
+/* line 9, ../sass/objects/_lists.scss */
+.un-list li i {
+  font-size: .7rem;
+  color: #27a2db;
+  padding-right: .3rem;
+}
 
-/* line 14, ../sass/objects/_lists.scss */
+/* line 18, ../sass/objects/_lists.scss */
 .or-list li {
   padding: .8rem 0;
 }
-/* line 18, ../sass/objects/_lists.scss */
+/* line 22, ../sass/objects/_lists.scss */
 .or-list li:nth-child(1):before, .or-list li:nth-child(2):before, .or-list li:nth-child(3):before, .or-list li:nth-child(4):before, .or-list li:nth-child(5):before {
-  content: "1";
-  font-size: .7rem;
+  content: "1)";
+  font-size: .8rem;
   color: #27a2db;
   padding: 0 0.25rem 0.1rem 0.3rem;
   margin-right: 0.7rem;
 }
-/* line 25, ../sass/objects/_lists.scss */
-.or-list li:nth-child(2):before {
-  content: "2";
-}
 /* line 29, ../sass/objects/_lists.scss */
-.or-list li:nth-child(3):before {
-  content: "3";
+.or-list li:nth-child(2):before {
+  content: "2)";
 }
 /* line 33, ../sass/objects/_lists.scss */
-.or-list li:nth-child(4):before {
-  content: "4";
+.or-list li:nth-child(3):before {
+  content: "3)";
 }
 /* line 37, ../sass/objects/_lists.scss */
-.or-list li:nth-child(5):before {
-  content: "5";
+.or-list li:nth-child(4):before {
+  content: "4)";
 }
 /* line 41, ../sass/objects/_lists.scss */
+.or-list li:nth-child(5):before {
+  content: "5)";
+}
+/* line 45, ../sass/objects/_lists.scss */
 .or-list li:before {
   display: inline-block;
-  border: 1px solid #27a2db;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-  background-clip: padding-box;
-  /* stops bg color from leaking outside the border: */
-  width: 1.25rem;
-  height: 1.25rem;
   line-height: 1.25rem;
 }
 
