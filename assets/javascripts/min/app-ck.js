@@ -1,0 +1,1 @@
+$(function(){function n(){$(".dropdown-menu").slideToggle()}$(".drop-bar i").on("click",n)});

@@ -1,0 +1,67 @@
+/*------------------------------------------*\
+    Dropdown menu
+\*------------------------------------------*/
+
+.dropdown-menu {
+  display: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+
+  li {
+    width: 100%;
+  
+    a {
+      display: block;
+      color: $text;
+      width: 100%;
+      padding: .1rem;
+
+      &:hover {
+        background-color:lighten($secondaryBg, 3%);
+      }
+    }
+  }
+
+  input {
+    width: 90%;
+    float: none;
+    position: relative;
+    padding-left: 1rem;
+
+    i {
+      position: absolute;
+      top: 0;
+      left: 0;
+
+    }
+  }
+}
+
+.drop-bar {
+  position: relative;
+
+  i {
+  display: none;
+  color: $text;
+  position: absolute;
+  top: 0;
+  right: 1rem;
+  font-size: 1.25rem;
+  }
+}
+
+@include media-query(palm) {
+  .drop-bar i {
+    display: block;
+  }
+
+  .main-list {
+    display:none;
+  }
+
+  .drop-nav i {
+    display: block;
+  }
+
+}

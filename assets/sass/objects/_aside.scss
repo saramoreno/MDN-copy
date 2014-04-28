@@ -28,3 +28,51 @@
   position: fixed;
 }
 
+//Aside responsive
+
+.aside-responsive {
+
+  .drop-bar-aside {
+    display: none;
+    width: 100%;
+    background: $secondaryBg;
+    position: relative;
+    padding: 1.25rem;
+    margin-bottom: 1.25rem;
+
+    i {
+      position: absolute;
+      top: 1.25rem;
+      right: 1.25rem;
+      color: $text;
+    }
+  }
+}
+
+@include media-query(palm){
+  .right-column {
+    display: none;
+  }
+
+  .main-column {
+    width: 100%;
+  }
+
+  .aside-responsive .drop-bar-aside {
+    display: block;
+  }
+}
+
+@include media-query(lap){
+  .right-column {
+    display: none;
+  }
+
+  .main-column {
+    width: 100%;
+  }
+
+  .aside-responsive .drop-bar-aside {
+    display: block;
+  }
+}

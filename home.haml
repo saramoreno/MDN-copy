@@ -16,12 +16,15 @@
   %body
     %header.main-header 
       .wrapper
+        .drop-bar 
+          %a{href:"#"} 
+            %i.fa.fa-bars
         .logo.left
           %h1 
             %a{href: "home.html"} 
               MDN
         %nav.right
-          %ul.main-list 
+          %ul.main-list
             %li.inline-content>
               %a{href:"#"} ZONES
             %li.inline-content>
@@ -32,10 +35,28 @@
               %a{href:"#"} TOOLS
             %li.inline-content>
               %a{href:"#"} DEMOS
-            %li.inline-content>
+            %li.form.inline-content>
               %form.basic-form{action: "#"} 
                 %input{type: "search-text"}/ 
                 %i.fa.fa-search
+        //Dropdown Menu
+        .dropdown-menu
+          %ul 
+            %li 
+              %a{href:"#"} ZONES 
+            %li 
+              %a{href:"#"} WEB PLATFORM 
+            %li 
+              %a{href:"#"} DEVELOPER PROGRAM 
+            %li 
+              %a{href:"#"} TOOLS 
+            %li 
+              %a{href:"#"} DEMOS 
+            %li 
+              %form.basic-form{action: "#"} 
+                %i.fa.fa-search
+                %input{type: "search-text"}/ 
+
     .main-content
       .wrapper
         %nav.crumbs
@@ -54,6 +75,36 @@
                 %i.fa.fa-chevron-right
             %li.crum-last.inline-content Values, variables and literals
         %h1.big-heading Values, variables and literals
+
+        //aside responsive
+        .aside-responsive
+          .drop-bar-aside
+            %h4 IN THIS ARTICLE
+            %a{href: "#"} 
+              %i.fa.fa-minus
+          .drop-content
+            %ol 
+              %li 
+                %a{href: "#"} Values
+                %ol.sub-list
+                  %li 
+                    %a.small{href:"#"} Data type conversion
+                  %li 
+                    %a.small{href:"#"} Converting strings to numbers
+              %li 
+                %a{href: "#"} Variables
+                %ol.sub-list
+                  %li 
+                    %a.small{href:"#"} Declaring variables
+                  %li 
+                    %a.small{href:"#"} Evaluating variables
+              %li 
+                %a{href: "#"} Constants
+              %li 
+                %a{href: "#"} Literals
+              %li 
+                %a{href: "#"} Unicode
+
         .column-wrapper
           .main-column>
             %p This chapter discusses values that JavaScript recognizes and describes the fundamental building blocks of JavaScript expressions: variables, constants, and literals.
@@ -205,6 +256,7 @@
                 %a{href: "#"} Literals
               %li 
                 %a{href: "#"} Unicode
+
       %footer 
         .wrapper
           .main-column
@@ -233,6 +285,10 @@
                   MDN
             %p.inline-content.three-quarters> &copy2014. Redradix
 
+    //SCRIPTS
+    %script{src:"assets/javascripts/app.js"}
+    %script{src:"assets/javascripts/jquery-2.1.0.min.js"}
+ 
 
 
 

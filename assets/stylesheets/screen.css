@@ -551,14 +551,15 @@ input[type="radio"] {
 /* line 25, ../sass/objects/_buttons.scss */
 .btn-xs {
   width: 10%;
+  min-width: 5rem;
 }
 
-/* line 29, ../sass/objects/_buttons.scss */
+/* line 30, ../sass/objects/_buttons.scss */
 .btn-m {
   width: 30%;
 }
 
-/* line 33, ../sass/objects/_buttons.scss */
+/* line 34, ../sass/objects/_buttons.scss */
 .btn-xl {
   width: 40%;
 }
@@ -595,36 +596,59 @@ input[type="radio"] {
 
 /* line 30, ../sass/objects/_header.scss */
 .main-list a {
-  padding: 0.7rem;
+  padding: .7rem;
   font-weight: bold;
   color: inherit;
+  display: inline;
   -webkit-border-radius: 10px;
   border-radius: 10px;
   background-clip: padding-box;
   /* stops bg color from leaking outside the border: */
 }
-/* line 37, ../sass/objects/_header.scss */
+/* line 38, ../sass/objects/_header.scss */
 .main-list a:hover {
   background-color: #fdfefe;
 }
 
 @media only screen and (max-width: 49.92857em) {
-  /* line 45, ../sass/objects/_header.scss */
-  .logo {
-    float: none;
-    margin: 0 auto 1.25rem auto;
+  /* line 47, ../sass/objects/_header.scss */
+  .wrapper {
+    padding: .7rem;
   }
 
-  /* line 50, ../sass/objects/_header.scss */
+  /* line 51, ../sass/objects/_header.scss */
+  .logo {
+    float: none;
+    margin: 0 auto;
+  }
+
+  /* line 58, ../sass/objects/_header.scss */
+  .main-header nav {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* line 65, ../sass/objects/_header.scss */
   .main-list {
     display: block;
     width: auto;
   }
-  /* line 54, ../sass/objects/_header.scss */
+  /* line 69, ../sass/objects/_header.scss */
   .main-list li {
     font-size: .8rem;
   }
+  /* line 72, ../sass/objects/_header.scss */
+  .main-list li .form {
+    display: block;
+    width: 100%;
+  }
 }
+/* line 81, ../sass/objects/_header.scss */
+.show {
+  display: block;
+}
+
 /*------------------------------------*\
     $FOOTER
 \*------------------------------------*/
@@ -717,6 +741,55 @@ footer .complementary-info a:hover {
   position: fixed;
 }
 
+/* line 35, ../sass/objects/_aside.scss */
+.aside-responsive .drop-bar-aside {
+  display: none;
+  width: 100%;
+  background: #f4f7f8;
+  position: relative;
+  padding: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+/* line 43, ../sass/objects/_aside.scss */
+.aside-responsive .drop-bar-aside i {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  color: #65666b;
+}
+
+@media only screen and (max-width: 49.92857em) {
+  /* line 53, ../sass/objects/_aside.scss */
+  .right-column {
+    display: none;
+  }
+
+  /* line 57, ../sass/objects/_aside.scss */
+  .main-column {
+    width: 100%;
+  }
+
+  /* line 61, ../sass/objects/_aside.scss */
+  .aside-responsive .drop-bar-aside {
+    display: block;
+  }
+}
+@media only screen and (min-width: 50em) and (max-width: 69.21429em) {
+  /* line 67, ../sass/objects/_aside.scss */
+  .right-column {
+    display: none;
+  }
+
+  /* line 71, ../sass/objects/_aside.scss */
+  .main-column {
+    width: 100%;
+  }
+
+  /* line 75, ../sass/objects/_aside.scss */
+  .aside-responsive .drop-bar-aside {
+    display: block;
+  }
+}
 /*------------------------------------------*\
     Tables
 \*------------------------------------------*/
@@ -922,6 +995,75 @@ code {
   line-height: 1.25rem;
 }
 
+/*------------------------------------------*\
+    Dropdown menu
+\*------------------------------------------*/
+/* line 5, ../sass/objects/_dropdown-menu.scss */
+.dropdown-menu {
+  display: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+/* line 11, ../sass/objects/_dropdown-menu.scss */
+.dropdown-menu li {
+  width: 100%;
+}
+/* line 14, ../sass/objects/_dropdown-menu.scss */
+.dropdown-menu li a {
+  display: block;
+  color: #65666b;
+  width: 100%;
+  padding: .1rem;
+}
+/* line 20, ../sass/objects/_dropdown-menu.scss */
+.dropdown-menu li a:hover {
+  background-color: #fdfefe;
+}
+/* line 26, ../sass/objects/_dropdown-menu.scss */
+.dropdown-menu input {
+  width: 90%;
+  float: none;
+  position: relative;
+  padding-left: 1rem;
+}
+/* line 32, ../sass/objects/_dropdown-menu.scss */
+.dropdown-menu input i {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* line 41, ../sass/objects/_dropdown-menu.scss */
+.drop-bar {
+  position: relative;
+}
+/* line 44, ../sass/objects/_dropdown-menu.scss */
+.drop-bar i {
+  display: none;
+  color: #65666b;
+  position: absolute;
+  top: 0;
+  right: 1rem;
+  font-size: 1.25rem;
+}
+
+@media only screen and (max-width: 49.92857em) {
+  /* line 55, ../sass/objects/_dropdown-menu.scss */
+  .drop-bar i {
+    display: block;
+  }
+
+  /* line 59, ../sass/objects/_dropdown-menu.scss */
+  .main-list {
+    display: none;
+  }
+
+  /* line 63, ../sass/objects/_dropdown-menu.scss */
+  .drop-nav i {
+    display: block;
+  }
+}
 /*------------------------------------------*\
     FONT AWESOME
 \*------------------------------------------*/
