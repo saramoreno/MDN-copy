@@ -1,5 +1,5 @@
 $(function () {
-  $("a.drop-bar").on("click", abreMenu);
+  $(".drop-bar i").on("click", abreMenu);
 
   function abreMenu() {
     $(".dropdown-menu").slideToggle();
@@ -9,9 +9,9 @@ $(function () {
 //aside desplegable
 
 $(function () {
-  $(".drop-bar-aside a").on("click", abreMenu);
+  $(".drop-bar-aside").on("click", despliegaMenu);
 
-  function abreMenu() {
-    $(".drop-content li").slideToggle();
+  function despliegaMenu() {
+    $(".drop-content").slideToggle();
   }
 });

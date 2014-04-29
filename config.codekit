@@ -499,6 +499,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/images\/dust.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 119030,
+		"inputAbbreviatedPath": "\/assets\/images\/dust.png",
+		"outputAbbreviatedPath": "\/assets\/images\/dust.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/images\/grid.png": {
 		"fileType": 32768,
 		"ignore": 0,

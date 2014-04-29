@@ -48,6 +48,7 @@ code {
   pointer-events: none;
   line-height: inherit;
   white-space:pre;
+  z-index: 1;
 
   &:before {
     content: attr(data-start);
