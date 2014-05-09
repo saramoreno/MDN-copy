@@ -687,6 +687,127 @@ footer .complementary-info a:hover {
 /*------------------------------------*\
     $ICONS
 \*------------------------------------*/
+@font-face {
+  font-family: 'icomoon';
+  src: url("fonts/icomoon.eot?-6jx1hf");
+  src: url("fonts/icomoon.eot?#iefix-6jx1hf") format("embedded-opentype"), url("fonts/icomoon.woff?-6jx1hf") format("woff"), url("fonts/icomoon.ttf?-6jx1hf") format("truetype"), url("fonts/icomoon.svg?-6jx1hf#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 16, ../sass/objects/_icons.scss */
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 30, ../sass/objects/_icons.scss */
+.icon-home:before {
+  content: "\e600";
+}
+
+/* line 33, ../sass/objects/_icons.scss */
+.icon-home2:before {
+  content: "\e601";
+}
+
+/* line 36, ../sass/objects/_icons.scss */
+.icon-office:before {
+  content: "\e602";
+}
+
+/* line 39, ../sass/objects/_icons.scss */
+.icon-newspaper:before {
+  content: "\e603";
+}
+
+/* line 42, ../sass/objects/_icons.scss */
+.icon-pencil:before {
+  content: "\e604";
+}
+
+/* line 45, ../sass/objects/_icons.scss */
+.icon-pencil2:before {
+  content: "\e605";
+}
+
+/* line 48, ../sass/objects/_icons.scss */
+.icon-quill:before {
+  content: "\e606";
+}
+
+/* line 51, ../sass/objects/_icons.scss */
+.icon-images:before {
+  content: "\e607";
+}
+
+/* line 54, ../sass/objects/_icons.scss */
+.icon-camera:before {
+  content: "\e608";
+}
+
+/* line 57, ../sass/objects/_icons.scss */
+.icon-music:before {
+  content: "\e609";
+}
+
+/* line 60, ../sass/objects/_icons.scss */
+.icon-headphones:before {
+  content: "\e60a";
+}
+
+/* line 63, ../sass/objects/_icons.scss */
+.icon-play:before {
+  content: "\e60b";
+}
+
+/* line 66, ../sass/objects/_icons.scss */
+.icon-film:before {
+  content: "\e60c";
+}
+
+/* line 69, ../sass/objects/_icons.scss */
+.icon-camera2:before {
+  content: "\e60d";
+}
+
+/* line 72, ../sass/objects/_icons.scss */
+.icon-dice:before {
+  content: "\e60e";
+}
+
+/* line 75, ../sass/objects/_icons.scss */
+.icon-connection:before {
+  content: "\e60f";
+}
+
+/* line 78, ../sass/objects/_icons.scss */
+.icon-podcast:before {
+  content: "\e610";
+}
+
+/* line 81, ../sass/objects/_icons.scss */
+.icon-feed:before {
+  content: "\e611";
+}
+
+/* line 84, ../sass/objects/_icons.scss */
+.icon-book:before {
+  content: "\e612";
+}
+
+/* line 87, ../sass/objects/_icons.scss */
+.icon-books:before {
+  content: "\e613";
+}
+
 /*------------------------------------*\
     $PANNELS
 \*------------------------------------*/
@@ -730,6 +851,7 @@ footer .complementary-info a:hover {
 \*------------------------------------------*/
 /* line 5, ../sass/objects/_aside.scss */
 .right-column {
+  z-index: 100;
   width: 20%;
   max-height: 528px;
   display: inline-block;
@@ -737,25 +859,25 @@ footer .complementary-info a:hover {
   vertical-align: top;
   padding: 1.25rem;
 }
-/* line 18, ../sass/objects/_aside.scss */
+/* line 19, ../sass/objects/_aside.scss */
 .right-column li {
   padding: 0.7rem;
 }
-/* line 21, ../sass/objects/_aside.scss */
+/* line 22, ../sass/objects/_aside.scss */
 .right-column li a:hover {
   text-decoration: underline;
 }
 
-/* line 27, ../sass/objects/_aside.scss */
+/* line 28, ../sass/objects/_aside.scss */
 .fixed {
   position: fixed;
 }
 
-/* line 33, ../sass/objects/_aside.scss */
+/* line 34, ../sass/objects/_aside.scss */
 .aside-responsive {
   position: relative;
 }
-/* line 36, ../sass/objects/_aside.scss */
+/* line 37, ../sass/objects/_aside.scss */
 .aside-responsive .drop-bar-aside {
   display: none;
   width: 100%;
@@ -764,14 +886,14 @@ footer .complementary-info a:hover {
   padding: 1.25rem;
   margin-bottom: 1.25rem;
 }
-/* line 44, ../sass/objects/_aside.scss */
+/* line 45, ../sass/objects/_aside.scss */
 .aside-responsive .drop-bar-aside i {
   position: absolute;
   top: 1.5rem;
   right: 1.25rem;
   color: #65666b;
 }
-/* line 52, ../sass/objects/_aside.scss */
+/* line 53, ../sass/objects/_aside.scss */
 .aside-responsive .drop-content {
   display: none;
   width: 100%;
@@ -781,39 +903,39 @@ footer .complementary-info a:hover {
   padding: 0 1.25rem 1.25rem 1.25rem;
   z-index: 100;
 }
-/* line 61, ../sass/objects/_aside.scss */
+/* line 62, ../sass/objects/_aside.scss */
 .aside-responsive .drop-content .sub-list {
   padding: 1rem;
 }
 
 @media only screen and (max-width: 49.92857em) {
-  /* line 68, ../sass/objects/_aside.scss */
+  /* line 69, ../sass/objects/_aside.scss */
   .right-column {
     display: none;
   }
 
-  /* line 72, ../sass/objects/_aside.scss */
+  /* line 73, ../sass/objects/_aside.scss */
   .main-column {
     width: 100%;
   }
 
-  /* line 76, ../sass/objects/_aside.scss */
+  /* line 77, ../sass/objects/_aside.scss */
   .aside-responsive .drop-bar-aside {
     display: block;
   }
 }
 @media only screen and (min-width: 50em) and (max-width: 69.21429em) {
-  /* line 82, ../sass/objects/_aside.scss */
+  /* line 83, ../sass/objects/_aside.scss */
   .right-column {
     display: none;
   }
 
-  /* line 86, ../sass/objects/_aside.scss */
+  /* line 87, ../sass/objects/_aside.scss */
   .main-column {
     width: 100%;
   }
 
-  /* line 90, ../sass/objects/_aside.scss */
+  /* line 91, ../sass/objects/_aside.scss */
   .aside-responsive .drop-bar-aside {
     display: block;
   }

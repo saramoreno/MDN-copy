@@ -1,0 +1,1 @@
+function moveScroller(){alert("asdf");var o=function(){var o=$(window).scrollTop(),t=$("#scroller-anchor").offset().top,r=$(".right-column");o>t?r.css({position:"fixed",top:"0px"}):t>=o&&r.css({position:"relative",top:""})};$(window).scroll(o),o()}$(function(){$("input[type=checkbox], input[type=radio]").custom_form(),moveScroller()});
